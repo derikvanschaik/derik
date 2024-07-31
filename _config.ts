@@ -6,6 +6,6 @@ const site = lume();
 
 site.use(tailwindcss());
 site.use(postcss());
-site.copy("images");
+site.copy("assets");
 
 export default site;
