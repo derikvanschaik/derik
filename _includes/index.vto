@@ -1,0 +1,27 @@
+{{ comp Base}}
+    <div class="container mx-auto">
+
+        {{# main profile section #}}
+        <div class="mt-4">
+            <h1 class="text-left text-6xl mb-2">Derik</h1>
+            <p class="text-left text-lg">
+                Full Stack Developer.
+            </p>
+            <p class="text-left text-lg">
+                Computer Science Graduate.
+            </p>
+
+        </div>
+
+        {{# about section #}}
+        <div class="mt-8">
+
+            {{ comp.HorizHeading({ heading: 'About'})}}
+            <p class="text italic mt-9">
+                I am a full stack developer based out of Vancouver B.C.
+                I studied computer science and economics at university. 
+            </p>
+        </div>
+
+    </div>
+{{/comp}}
