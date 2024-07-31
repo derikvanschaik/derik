@@ -4,12 +4,10 @@
   },
   "tasks": {
     "lume": "echo \"import 'lume/cli.ts'\" | deno run -A -",
-    "build": "deno task lume",
-    "serve": "deno task lume -s"
+    "build": "echo 'BASE_URL: /derik' > _data.yml && deno task lume",
+    "serve": "echo 'BASE_URL:' > _data.yml && deno task lume -s"
   },
   "compilerOptions": {
-    "types": [
-      "lume/types.ts"
-    ]
+    "types": ["lume/types.ts"]
   }
 }
