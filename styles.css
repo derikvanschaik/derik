@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.blog pre{
+    @apply text-gray-100 bg-gray-700 px-5 py-5 w-full rounded overflow-x-scroll my-4;
+}
+
+.blog h3 {
+    @apply text-4xl my-8;
+}
+
+.blog h4 {
+    @apply text-3xl my-8;
+}
