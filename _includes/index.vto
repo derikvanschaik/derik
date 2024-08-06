@@ -3,26 +3,27 @@
 
         {{# main profile section #}}
         <div class="mt-4">
-            <div class="flex flex-col md:flex-row ">
-                <div class="w-full md:w-1/3 mb-8 md:mb-0">
-                    <h1 class="text-center md:text-left text-6xl mb-2">Derik</h1>
-                    <div class="text-center md:text-left text-lg mt-12">
+            <div class="flex flex-col md:flex-row">
+                <div class="w-full md:w-1/3 mb-8 md:mb-0 flex flex-col justify-center">
+                    <h1 class="text-center md:text-left text-4xl mb-2 md:text-6xl ">Derik</h1>
+                    <div class="text-center md:text-left text-2xl bold mt-12 mb-4 md:text-4xl">
                         Full Stack Developer.
                     </div>
-                    <div class="text-center md:text-left text-lg">
+                    <div class="text-center md:text-left text-2xl bold md:text-4xl">
                         Computer Science Graduate.
                     </div>
+                    <img src="{{BASE_URL}}/assets/me.jpg" class="object-cover w-full my-4 rounded-md h-[200px]  block md:hidden"/>
 
                     <nav>
-                        <h1 class="text-center md:text-left text-3xl mb-2 mt-6">Articles</h1>
+                        <h1 class="text-center md:text-left text-2xl mb-6 mt-12 ml-2 underline">Articles:</h1>
                         <ul>
-                            <li>
-                                <a href="{{BASE_URL}}/blog/css-you-need-for-job-pt1" class="text-xl block text-center md:text-left text-blue-700 underline underline-offset-1">Css you need for a job</a>
+                            <li class="flex justify-center md:justify-start">
+                                <a href="{{BASE_URL}}/blog/css-you-need-for-job-pt1" class="text-xl block text-center md:text-left underline underline-offset-1 bg-blue-100 border-1 border-gray-700 w-[fit-content] px-6 py-2 rounded-full">Css you need for a job</a>
                             <li>
                         </ul>
                     </nav>
                 </div>
-                <img src="{{BASE_URL}}/assets/me.jpg" class="object-cover w-full md:w-2/3 rounded h-[250px] md:h-[500px]"/>
+                <img src="{{BASE_URL}}/assets/me.jpg" class="object-cover w-full md:w-2/3 rounded-md h-[250px] md:h-[500px] hidden md:block"/>
             </div>
         </div>
 
