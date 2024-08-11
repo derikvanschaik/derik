@@ -1,0 +1,22 @@
+{{ comp Base }}
+<div class="max-w-[1024px] mx-[20px] md:mx-auto">
+    <h3 class="text-4xl text-left my-12">{{project}}</h3>
+    <div class="text-lg font-light">
+        {{description}}
+    </div>
+    <h4 class="mt-12 mb-6 text-lg font-light">Skills + Technologies</h4>
+    {{ comp.rowList({ 
+        items: skills,
+        render: function(item){
+            return '<div class="px-4 py-1 bg-gray-300 text-black rounded-full mr-2">' + item + '</div>'
+        }
+        })
+    }}
+    <div class="mt-12 text-center">
+        {{ for image of images}}
+            <img src="{{BASE_URL}}/{{image}}" class="h-auto max-w-full mb-6" />
+        {{ /for}}
+    </div>
+    
+</div>
+{{/comp}}
