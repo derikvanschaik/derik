@@ -509,6 +509,10 @@ video {
   margin-top: 3rem;
   margin-bottom: 3rem;
 }
+.my-4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
 .mb-12 {
   margin-bottom: 3rem;
 }
@@ -530,11 +534,11 @@ video {
 .h-64 {
   height: 16rem;
 }
+.h-\[250px\] {
+  height: 250px;
+}
 .h-\[2px\] {
   height: 2px;
-}
-.h-\[500px\] {
-  height: 500px;
 }
 .h-auto {
   height: auto;
@@ -575,6 +579,9 @@ video {
 }
 .gap-y-\[100px\] {
   row-gap: 100px;
+}
+.rounded {
+  border-radius: 0.25rem;
 }
 .rounded-lg {
   border-radius: 0.5rem;
@@ -653,6 +660,10 @@ video {
 .font-thin {
   font-weight: 100;
 }
+.text-blue-500 {
+  --tw-text-opacity: 1;
+  color: rgb(59 130 246 / var(--tw-text-opacity));
+}
 .text-gray-500 {
   --tw-text-opacity: 1;
   color: rgb(107 114 128 / var(--tw-text-opacity));
@@ -660,6 +671,9 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+.underline {
+  text-decoration-line: underline;
 }
 .blog pre {
   margin-top: 1rem;
@@ -687,6 +701,10 @@ video {
   margin-bottom: 2rem;
   font-size: 1.875rem;
   line-height: 2.25rem;
+}
+.hover\:text-blue-700:hover {
+  --tw-text-opacity: 1;
+  color: rgb(29 78 216 / var(--tw-text-opacity));
 }
 @media (min-width: 768px) {
 

@@ -38,19 +38,23 @@
         <div class="mt-12">
             <h3 class="text-6xl text-center mb-12">My Portfolio</h3>
             <div class="flex flex-row flex-wrap gap-x-[100px] gap-y-[100px] justify-center">
-                <article class="w-[400px] max-w-full">
-                    <img src="{{BASE_URL}}/assets/me.jpg" class="w-[500px] h-[500px] object-cover"/>
-                    <h1 class="text-4xl text-center mt-4">Front End work for TM Canada</h1>
+                <article class="w-[400px] max-w-full text-center">
+                    <img src="{{BASE_URL}}/assets/tm-canada-showcase.png" class="w-[500px] h-[250px] object-cover rounded"/>
+                    <h1 class="text-4xl my-4">Front End work for TM Canada</h1>
+
+                    {{ comp.link({ url: "{{BASE_URL}}/projects/tm-canada" , content: "Learn More"})}}
                 </article>
 
-                <article class="w-[400px] max-w-full">
-                    <img src="{{BASE_URL}}/assets/me.jpg" class="w-[500px] h-[500px] object-cover"/>
-                    <h1 class="text-4xl text-center mt-4">Job Tracking application</h1>
+                <article class="w-[400px] max-w-full text-center">
+                    <img src="{{BASE_URL}}/assets/job-tracker-showcase.png" class="w-[500px] h-[250px] object-cover rounded"/>
+                    <h1 class="text-4xl text-center my-4">Job Tracking application</h1>
+                    {{ comp.link({ url: "{{BASE_URL}}/projects/job-tracker" , content: "Learn More"})}}
                 </article>
 
-                <article class="w-[400px] max-w-full">
-                    <img src="{{BASE_URL}}/assets/me.jpg" class="w-[500px] h-[500px] object-cover"/>
-                    <h1 class="text-4xl text-center mt-4">MIMI mindmapping application</h1>
+                <article class="w-[400px] max-w-full text-center">
+                    <img src="{{BASE_URL}}/assets/me.jpg" class="w-[500px] h-[250px] object-cover rounded"/>
+                    <h1 class="text-4xl text-center my-4">MIMI mindmapping application</h1>
+                    {{ comp.link({ url: "{{BASE_URL}}/projects/mimi" , content: "Learn More"})}}
                 </article>
             </div>
         </div>
