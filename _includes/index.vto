@@ -13,7 +13,7 @@
         </div>
         
         {{ comp.divider() }}
-        <h3 class="text-6xl text-left my-12" id="about">About</h3>
+        <h3 class="text-4xl md:text-6xl text-left my-6 md:my-12" id="about">About</h3>
         <p class="text-xl font-thin text-left">
            My approach to development is simple. Literally simple. Nowadays, it's more in fashion to try and shove as much new fancy tech as you possibly
            can before even gathering requirements. More fancy tech = more fancy code = more code = 
@@ -36,26 +36,18 @@
         {{ comp.divider() }}
 
         <div class="mt-12">
-            <h3 class="text-6xl text-center mb-12" id="portfolio">My Portfolio</h3>
+            <h3 class="text-4xl md:text-6xl text-center mb-6 md:mb-12" id="portfolio">My Portfolio</h3>
+
             <div class="flex flex-row flex-wrap gap-x-[100px] gap-y-[100px] justify-center">
-                <article class="w-[400px] max-w-full text-center">
-                    <img src="{{BASE_URL}}/assets/tm-canada-showcase.png" class="w-[500px] h-[250px] object-cover rounded"/>
-                    <h1 class="text-4xl my-4">Front End work for TM Canada</h1>
 
-                    <a href="{{BASE_URL}}/projects/tm-canada" class="text-blue-500 hover:text-blue-700 underline text-xl">Learn More</a>
-                </article>
+                {{ for proj of [{ title: "Transcendental Meditation Canada", img: "tm-canada-showcase.png", url: "tm-canada"}, { title: "Job Tracker app", img: "job-tracker-showcase.png", url: "job-tracker"}, { title: "MIMI - mindmap app", img: "mimi-showcase.png", url: "mimi-mindmap"}]}}
+                    <article class="w-[400px] max-w-full text-center">
+                        <img src="{{BASE_URL}}/assets/{{proj.img}}" class="w-[500px] h-[250px] object-cover rounded"/>
+                        <h1 class="text-2xl md:text-4xl my-4">{{proj.title}}</h1>
 
-                <article class="w-[400px] max-w-full text-center">
-                    <img src="{{BASE_URL}}/assets/job-tracker-showcase.png" class="w-[500px] h-[250px] object-cover rounded"/>
-                    <h1 class="text-4xl text-center my-4">Job Tracking application</h1>
-                    <a href="{{BASE_URL}}/projects/job-tracker" class="text-blue-500 hover:text-blue-700 underline text-xl">Learn More</a>
-                </article>
-
-                <article class="w-[400px] max-w-full text-center">
-                    <img src="{{BASE_URL}}/assets/me.jpg" class="w-[500px] h-[250px] object-cover rounded"/>
-                    <h1 class="text-4xl text-center my-4">MIMI mindmapping application</h1>
-                    <a href="{{BASE_URL}}/projects/mimi" class="text-blue-500 hover:text-blue-700 underline text-xl">Learn More</a>
-                </article>
+                        <a href="{{BASE_URL}}/projects/{{proj.url}}" class="text-blue-500 hover:text-blue-700 underline text-xl">Learn More</a>
+                    </article>
+                {{/for}}
             </div>
         </div>
 
@@ -63,7 +55,7 @@
         {{ comp.divider() }}
         <div class="mt-8">
 
-            <h3 class="text-6xl text-left mb-12" id="experience">Past Experience</h3>
+            <h3 class="text-4xl md:text-6xl text-left mb-6 md:mb-12" id="experience">Past Experience</h3>
 
             <div class="">
                 <div class="py-5 px-2 rounded-bg-gray-100">
