@@ -1,7 +1,8 @@
 ---
 layout: project.vto
 project: Front End Work For Transcendental Meditation, Canada
-description: In my role as a Front End Developer, I played a key role in redesigning the header, footer, multiple web pages, contact form, event booking and filtering component, and location finder component for the company's website. Collaborating closely with the marketing and development teams, I utilized Angular, TypeScript, HTML, and CSS to translate UI/UX design mockups into functional and responsive web pages. This redesign not only enhanced the visual and interactive aspects of the site but also significantly boosted user engagement and overall website performance. Additionally, I successfully integrated third-party platforms such as Drip, Google Tag Manager, and Typeform via APIs, aligning the site with various marketing strategies and solutions.
+description: For Transcendental Meditation Canada, I have created a new look for their site which has encompassed redesigning their header, footer, contact forms, multiple landing pages, event booking components, location finder components, and more.
+link: https://ca.tm.org/en
 skills:
     - HTML
     - CSS

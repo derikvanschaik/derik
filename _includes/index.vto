@@ -4,7 +4,7 @@
         {{# main profile section #}}
         <div class="mt-4">
             <div class="flex flex-col-reverse md:flex-row">
-                <img src="{{BASE_URL}}/assets/me.jpg" class="w-full h-auto mx-auto md:w-1/2 max-w-[600px] md:h-auto md:object-cover rounded-lg"/>
+                <img src="{{BASE_URL}}/assets/me.jpg" class="w-full hidden md:block h-auto mx-auto md:w-1/2 max-w-[600px] md:h-auto md:object-cover rounded-lg"/>
                 <div class="w-full md:w-1/2 md:pl-12 flex flex-col justify-center mb-6">
                     <h1 class="text-5xl mb-4">Derik</h1>
                     <h3 class="text-4xl">Full Stack Developer.</h3>
@@ -13,7 +13,7 @@
         </div>
         
         {{ comp.divider() }}
-        <h3 class="text-6xl text-left my-12">About</h3>
+        <h3 class="text-6xl text-left my-12" id="about">About</h3>
         <p class="text-xl font-thin text-left">
            My approach to development is simple. Literally simple. Nowadays, it's more in fashion to try and shove as much new fancy tech as you possibly
            can before even gathering requirements. More fancy tech = more fancy code = more code = 
@@ -36,7 +36,7 @@
         {{ comp.divider() }}
 
         <div class="mt-12">
-            <h3 class="text-6xl text-center mb-12">My Portfolio</h3>
+            <h3 class="text-6xl text-center mb-12" id="portfolio">My Portfolio</h3>
             <div class="flex flex-row flex-wrap gap-x-[100px] gap-y-[100px] justify-center">
                 <article class="w-[400px] max-w-full text-center">
                     <img src="{{BASE_URL}}/assets/tm-canada-showcase.png" class="w-[500px] h-[250px] object-cover rounded"/>
@@ -63,7 +63,7 @@
         {{ comp.divider() }}
         <div class="mt-8">
 
-            <h3 class="text-6xl text-left mb-12">Past Experience</h3>
+            <h3 class="text-6xl text-left mb-12" id="experience">Past Experience</h3>
 
             <div class="">
                 <div class="py-5 px-2 rounded-bg-gray-100">
